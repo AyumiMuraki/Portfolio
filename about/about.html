@@ -12,35 +12,67 @@
    <!-------------------- 
     header
   -------------------->
-  <header>
-    <p>作成中・・・</p>
-    <br>
-    <br>
-    <nav>
-      <div class="box1">
-        <a href="../index.html" class="top-menu-about">Home</a>
-        <a href="../works/works.html" class="top-menu-works">Works</a>
-        <a href="#contact">Contact</a>
+  <header id="header" class="wrapper">
+    <div class="humburger-menu">
+      <input type="checkbox" id="menu-btn-check">
+      <label for="menu-btn-check" class="menu-btn"><span></span></label>
+      <div class="menu-content">
+        <ul>
+          <li>
+            <a href="../index.html" class="top-menu-about">Home</a>
+          </li>
+          <li>
+            <a href="../works/works.html" class="top-menu-works">Works</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
-    </nav>      
+    </div>    
   </header>
-
+  
   <!-------------------- 
     main
   -------------------->
-  <main>
-    <!-- about -->
-    <section id="about" class="wrapper">
+  <main>   
+    <div id="mainvisual">
+      <img src="img/main-visual.jpg" alt="メイン画像">
+    </div>
+  
+    <!-- about-1 -->
+    <section id="about-1" class="wrapper">
       <h2 class="section-totle">About</h2>
       <div class="content">
         <img src="img/icon1.jpg" alt="アイコン画像です。">
         <div class="text">
           <p>
-            村木歩のポートフォリオサイト<br>
-            20代、フリーランス<br>
-            webサイト作成(デザイン、コーディング)
+            name : 村木 歩  Muraki Ayumi<br>
+            skill : HTML, CSS, Javascript, photoshop<br>
+            hobby : 映画鑑賞, 楽器, 釣り, ゲーム, 野球観戦… <br>
           </p>
         </div>
+      </div>
+    </section>
+    <!-- about-2 -->
+    <section id="about-2" class="wrapper">
+      <div class="text">
+        <p>
+          神奈川在住の20代フリーランス。<br>
+          2021年に独学でプログラミング学習を開始。<br>
+          現在、web系フリーランスとしてデザインからHP・LP製作などの業務を行っています。<br>
+          様々なジャンルに挑戦していますが、シンプルで分りやすいデザインを得意としています。<br>
+        </p>
+      </div>
+      <div class="text">
+        <p>
+          対応可能な業務:webサイトデザイン・コーディング・スマートフォンサイト(レスポンシブ対応)
+        </p>
+      </div>
+      <div class="text">
+        <p>
+          それぞれのスキル感はWorksのページからご判断をお願いいたします。
+        </p>
       </div>
     </section>
   </main>

@@ -46,8 +46,7 @@ main {
 Phone 
 -------------------- */
 @media screen and (max-width: 600px) {
-
-
+  
   section {
     display: flex;
   }
@@ -235,10 +234,3 @@ Phone
     color: #383e45;
   }
 }
-
-
-
-/* --------------------
-PC 
--------------------- */
-
