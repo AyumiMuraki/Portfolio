@@ -4,7 +4,7 @@
 common
 -------------------- */
 html {
-  font-size: 100%;
+  font-size: 12px;
 }
 body {
   color:#383e45;
@@ -32,7 +32,6 @@ main {
   margin-bottom: 30px;  
   border-bottom: solid 1px #383e45;
 }
-
 .wrapper {
   max-width: 960px;
   margin: 0 auto 100 auto;
@@ -169,6 +168,7 @@ Phone
   main 
   -------------------- */
 
+
   #mainvisual img {
     width: 100%;
   }
@@ -179,39 +179,36 @@ Phone
   #about {
     flex-direction: column;
   }
+  #about-1 {
+    margin-bottom: 50px;
+  }
+  #about-1 img {
+    border-radius: 50%;
+  }
+  #about-1 .text1 {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+  }
 
-  /* --------------------
-  works
-  -------------------- */
-  
-  #works {
-    flex-direction: column;
+  #about-2 {
+    display: flex;
+    width: 350px;
+    background: rgba(206, 219, 245, 0.596);
+    margin: auto;
   }
-  #works .works-box2 {
-    width: 100%;
-    margin-bottom: 30px;
+  #about-2 .text2 {
+    display: flex;
+    text-align: left;
   }
-  #works .btn {
-    margin-left: auto;
-    text-align: center;
-    width: 150px;
-    padding: 4px;
-    border: 1px solid #383e45;
-    border-radius: 30px;
-    right: 0;
-  }  
-  #works .btn-menu {
-    color: #383e45;
-  }
-  #works .btn:hover {
-    cursor: pointer;
-  }
+
 
   /* --------------------
   content
   -------------------- */ 
   #contact {
     flex-direction: column;
+    
   }
   #contact svg {
     color: rgb(97, 205, 219);
