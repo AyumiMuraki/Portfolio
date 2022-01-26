@@ -44,6 +44,10 @@ Phone
 -------------------- */
 @media screen and (max-width: 599px) {
   
+  body {
+    background: linear-gradient(-1350deg, #7ef6f865, #6551ff5b);
+  }
+  
   section {
     display: flex;
   }

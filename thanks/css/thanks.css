@@ -21,6 +21,7 @@ main {
 .section-title {
   display: inline-block;
   font-size: 1.5rem;
+  text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;  
   border-bottom: solid 1px #383e45;
@@ -37,16 +38,18 @@ main {
 }
 h2 {
   font-family: 'Lobster', sans-serif;
-  
 }
 /* --------------------
 Phone 
 -------------------- */
 @media screen and (max-width: 599px) {
   body {
-    background: linear-gradient(-150deg, #6551ff5b, #7ef6f865) fixed;
+    background: linear-gradient(15deg, #6551ff5b, #7ef6f865) fixed;
   }
-  
+
+  section {
+    display: flex;
+  }
 
   /* --------------------
   header
@@ -169,72 +172,36 @@ Phone
   main 
   -------------------- */
 
-
-  #mainvisual img {
-    width: 100%;
+  #main p {
+    text-align: center;
+    margin-top: 100px;
   }
-  .main-img p {
-    display: none;
-  }
-
 
   /* --------------------
-  about
-  -------------------- */
-  #about-1 {
-    flex-direction: column;
-  }
-  #about-1 {
-    margin-bottom: 50px;
-  }
-  #about-1 img {
-    border-radius: 50%;
-  }
-  #about-1 .text1 {
-    width: 340px;
-    text-align: left;
-    margin: 0 auto;
-    padding: 0;
-
-  }
-
-  #about-2 {
-    display: flex;
-    width: 350px;
-    background: rgba(206, 219, 245, 0.596);
-    margin: auto;
-  }
-  #about-2 .text2 {
-    text-align: left;
-  }
-
-
-  /* --------------------
-  content
+  footer
   -------------------- */ 
-  #contact {
+  #footer {
     flex-direction: column;
-    
   }
-  #contact svg {
-    color: rgb(97, 205, 219);
-  }
-  #contact .twitter {
+  #footer a {
+    margin: 10%;
     color: #383e45;
   }
-
 }
+
+
 
 /* --------------------
 PC 
 -------------------- */
 @media screen and (min-width: 600px) and (max-width: 1980px) {
   body {
-    background: linear-gradient(-150deg, #6551ff5b, #7ef6f865) fixed;
+    background: linear-gradient(15deg, #6551ff5b, #7ef6f865) fixed;
   }
   section {
     margin: 0 auto;
   }
+
   /* --------------------
   header
   -------------------- */
@@ -257,87 +224,26 @@ PC
     font-family: 'Lobster', sans-serif;
     font-size: 1.5rem;
   }
-
   /* --------------------
   main
   -------------------- */
   /*-- mainvisual --*/
-  .main-img {
-    position: relative;
-  }
-  .main-img img {
-    width: 100%;
-    height: 300px;
-  }
-  .main-img p {
-    background: rgba(137, 149, 219, 0.178);
-    color: #dadada;
-    position: absolute;
+  #main p {
     text-align: center;
-    bottom: 10%;
-    right: 6%;
-    width: 450px;
-    padding: 10px 10px;
+    margin-top: 100px;
   }
-
-  /*-- about-1 --*/
-  #about-1 {
-    margin-bottom: 30px;
-  }
-  #about-1 .title {
-    text-align: left;
-    margin-left: 5%;
-  }
-  #about-1 .content {
-    display: flex;
-  }
-  #about-1 img {
-    border-radius: 50%;
-  }
-  #about-1 .text1 {
-    margin-left: 24px;
-  }
-  #about-1 p {
-    text-align: left;
-  }
-  #about-1 .p-top {
-    margin-top: 30px;
-  }
-  .twitter-box {
-    color: #383e45f3;
-    margin: 0 auto;
-    display: flex;
-    width: 100%;
-    transition:  .5s;
-  }
-  .twitter-box:hover {
-    color: rgb(0, 140, 255);
-    transition: .5s;
-  }
-
-  /*-- about-2 --*/
-  #about-2 {
-    padding: 8px;
-  }
-  #about-2 .text2 {
-    display: flex;
-    margin-left: auto;
-    background: rgba(114, 134, 250, 0.24);
-    width: 700px;    
-    padding: 36px;
-    text-align: left;
-    justify-content: center;
-  }
-
 
   /* --------------------
   footer
   -------------------- */
   #footer {
     margin: 0 auto;
+    padding: 8px;
   }
   #footer p {
     text-align: center;
   }
 
+  
 }
+

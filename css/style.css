@@ -43,6 +43,9 @@ h2 {
 Phone 
 -------------------- */
 @media screen and (max-width: 599px) {
+  body {
+    background: linear-gradient(-570deg, #6551ff5b, #7ef6f865) fixed;
+  }
 
 
   section {

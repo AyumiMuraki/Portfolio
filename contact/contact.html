@@ -1,14 +1,3 @@
-<?php
-// 変数初期化
-$page_flag = 0;
-if ( !empty($_POST['btn_confirm']) ){
-    // btn_confirmが押された時に確認画面へ
-    $page_flag = 1;
-} elseif ( !empty($_POST['btn']) ){
-    // btn_submitが押された時に完了画面へ
-    $page_flag = 2;
-}
-?>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -67,40 +56,7 @@ if ( !empty($_POST['btn_confirm']) ){
         </div>
       </section>
 
-      <!-- <section id="contact-form">
-        <div class="form">
-          <div class="name">
-            <div class="form-item">
-              <p class="form-item-Label">
-                <span class="form-item-Label-Required"></span>
-                お名前
-              </p>
-              <input type="text" class="form-item-Input" >
-            </div>
-            <div class="form-item">
-              <p class="form-item-Label">
-                <span class="form-item-Label-Required"></span>
-                メールアドレス
-              </p>
-              <input type="email" class="form-item-Input" >
-            </div>
-          </div>
-          <div class="message">
-            <div class="form-inline">
-              <p class="form-item-Label isMsg">
-                <span class="form-item-Label-Required"></span>
-                メッセージ
-              </p>
-              <textarea class="form-item-Textarea"></textarea>
-            </div>
-            <div class="accesskey">
-              <input type="hidden" name="accesskey" value="153e5a00-5f89-487e-a547-badd350f0d59">
-            </div>
-          </div>
-        </div>
-        <div class="btn">
-          <input type="submit" class="Form-Btn" value="送    信">
-      </section> -->
+
       <section id="contact-form">
         <form action="https://api.staticforms.xyz/submit" method="post">
           <div class="name">
