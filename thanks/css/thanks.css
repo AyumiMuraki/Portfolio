@@ -173,8 +173,10 @@ Phone
   -------------------- */
 
   #main p {
+    font-size: 0.75rem;
     text-align: center;
     margin-top: 100px;
+    margin-bottom: 100px;
   }
 
   /* --------------------
@@ -229,8 +231,10 @@ PC
   -------------------- */
   /*-- mainvisual --*/
   #main p {
+    font-size: 1.2rem;
     text-align: center;
     margin-top: 100px;
+    margin-bottom: 100px;
   }
 
   /* --------------------
