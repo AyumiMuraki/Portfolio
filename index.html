@@ -1,130 +1,123 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-  <title>MURAKIAYUMI</title>
-  <meta name="フリーwebデザイナー「村木歩」のポートフォリオサイトです。デザインからコーディングまで承ります。シンプルで分りやすい、洒落たデザイン、求められているものの再現性を重視して取り組みます。">  
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- 全体 -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://ayumimuraki.github.io/Portfolio/style.css">
-  <!-- about -->
-  <link rel="stylesheet" href="css/about.css">
-  <!-- works -->
-  <link rel="stylesheet" href="css/worls.css">
-  <link rel="shortcut icon" href="img/favicon2.ico">
-</head>
-
-<body>
-  <!-------------------- 
-    header
-  -------------------->
-  <header id="header" class="wrapper">
-    <div class="humburger-menu">
-      <input type="checkbox" id="menu-btn-check">
-      <label for="menu-btn-check" class="menu-btn"><span></span></label>
-      <div class="menu-content">
-        <ul>
-          <li>
-            <a href="../index.html" class="top-menu-about">Home</a>
-          </li>
-          <li>
-            <a href="./about/about.html" class="top-menu-about">About</a>
-          </li>
-          <li>
-            <a href="./works/works.html" class="top-menu-works">Works</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>    
-  </header>
-  <!-------------------- 
-    main
-  -------------------->
-   <!-- mainvisual -->
-  <main>   
-    <div id="mainvisual">
-      <img src="img/main-visual.jpg" alt="メイン画像">
-    </div>
-
+    <title>MURAKIAYUMI</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="フリーwebデザイナー「村木歩」のポートフォリオサイトです。デザインからコーディングまで承ります。シンプルで分りやすい、洒落たデザイン、求められているものの再現性を重視して取り組みます。">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 全体 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://ayumimuraki.github.io/Portfolio/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <!-- about -->
-    <section id="about" class="wrapper">
-      <div>
-        <h2 class="section-title">About</h2>
-      </div>
-      <div class="content">
-        <div class="text">
+    <link rel="stylesheet" href="css/about.css">
+    <!-- works -->
+    <link rel="stylesheet" href="css/worls.css">
+    <link rel="shortcut icon" href="img/favicon2.ico">
+    <!-- contact -->
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="shortcut icon" href="img/favicon2.ico">
+  </head>
+
+  <body>
+    <!-------------------- 
+      header
+    -------------------->
+    <header id="header" class="wrapper">
+      <div class="humburger-menu">
+        <input type="checkbox" id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <div class="menu-content">
+          <ul>
+            <li>
+              <a href="./index.html" class="top-menu-about">Home</a>
+            </li>
+            <li>
+              <a href="./about/about.html" class="top-menu-about">About</a>
+            </li>
+            <li>
+              <a href="./works/works.html" class="top-menu-works">Works</a>
+            </li>
+            <li>
+              <a href="./contact/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>    
+    </header>
+    <!-------------------- 
+      main
+    -------------------->
+    <!-- mainvisual -->
+    <main>   
+        <div id="mainvisual" class="main-img">
+          <img src="img/main-visual.jpg" alt="メイン画像">
           <p>
             村木歩のポートフォリオサイト<br>
+            <br>
             20代、フリーランス<br>
+            <br>
             webサイト(デザイン、コーディング)<br>
           </p>
         </div>
-      </div>
-    </section>
 
-    <!-- works -->
-    <section id="works" class="wrapper">
-      <div>
-        <h2 class="section-title">Works</h2>
-      </div>
-      <p class="text">様々な架空サイトを作成しました。</p>
-      <div class="box2">
-        <div class="works-box">
-          <img src="img/works1.jpg" alt="cafeサイトの画像です。">
-          <p>cafe</p>
+      <!-- about -->
+      <section id="about" class="wrapper">
+        <div>
+          <h2 class="section-title">About</h2>
         </div>
-        <div class="works-box">
-          <img src="img/works2.jpg" alt="眼科サイトの画像です。">
-          <p>眼科</p>
+        <div class="content">
+          <div class="text">
+            <p>
+              村木歩のポートフォリオサイト<br>
+              20代、フリーランス<br>
+              webサイト(デザイン、コーディング)<br>
+            </p>
+          </div>
         </div>
-        <div class="works-box">
-          <img src="img/works3.jpg" alt="アクセサリーショップサイトの画像です。">
-          <p>アクセサリーショップ</p>
-        </div>
-      </div>
+      </section>
 
-      <div class="view-more">
-        <div class="btn">
-          <a href="./works/works.html" class="btn-menu">view more</a>
+
+      <!-- works -->
+      <section id="works" class="wrapper">
+        <div>
+          <h2 class="section-title">Works</h2>
         </div>
-      </div>
-      
-    <!-- contact -->
-    <section id="contact" class="wrapper">
-      <div>
-        <h2 class="section-title">Contact</h2>
-      </div>
-      <div class="twitter-box">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-        </svg>
-        <a href="https://twitter.com/ayumi_mypace08" class="twitter">Twitter</a>        
-      </div>
-      <div class="mail-box">
-        <p>mail : a.muraki3927@gmail.com</p>
-      </div>
-    </section>
-  </main>
+        <p class="text">様々な仮想サイトを作成しました。</p>
+        <div class="box2">
+          <div class="works-box">
+            <img src="img/works1.jpg" alt="cafeサイトの画像です。">
+            <p>cafe</p>
+          </div>
+          <div class="works-box">
+            <img src="img/works2.jpg" alt="眼科サイトの画像です。">
+            <p>眼科</p>
+          </div>
+          <div class="works-box">
+            <img src="img/works3.jpg" alt="アクセサリーショップサイトの画像です。">
+            <p>アクセサリーショップ</p>
+          </div>
+        </div>
 
-  <!-------------------- 
-    footer
-  -------------------->
-  <footer id="footer" class="wrapper">    
-    <nav>
-      <div class="box3">
-        <a href="#" class="top">Top</a>
-        <a href="./about/about.html" class="top-menu-about">About</a>
-        <a href="./works/works.html" class="top-menu-works">Works</a>
-      </div>
-    </nav>      
-    <p>&copy; 2021 MURAKIAYUMI All Rights Resarved.</p>
-  </footer>  
+        <div class="view-more">
+          <div class="btn">
+            <a href="./works/works.html" class="btn-menu">view more</a>
+          </div>
+        </div>
+      </section>
+     
+    </main>
 
-</body>
+    <!-------------------- 
+      footer
+    -------------------->
+    <footer id="footer" class="wrapper">  
+      <p>&copy; 2021 MURAKIAYUMI All Rights Resarved.</p>
+    </footer>  
+
+  </body>
 
 </html>

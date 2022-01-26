@@ -1,39 +1,98 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <title>Works</title>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/worls.css">
-</head>
-<body>
-  <!-------------------- 
-   header
- -------------------->
- <header id="header" class="wrapper">
-   <div class="humburger-menu">
-     <input type="checkbox" id="menu-btn-check">
-     <label for="menu-btn-check" class="menu-btn"><span></span></label>
-     <div class="menu-content">
-       <ul>
-         <li>
-           <a href="../index.html" class="top-menu-about">Home</a>
-         </li>
-         <li>
-          <a href="../about/about.html" class="top-menu-about">About</a>
-         </li>
-         <li>
-           <a href="../works/works.html" class="top-menu-works">Works</a>
-         </li>
-         <li>
-           <a href="#contact">Contact</a>
-         </li>
-       </ul>
-     </div>
-   </div>    
- </header>
-  作成中・・・
-  <a href="../index.html" class="top-menu-about">Home</a>
-</body>
+  <head>
+    <title>Works</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/worls.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-------------------- 
+      header
+    -------------------->
+    <header id="header" class="wrapper">
+      <div class="humburger-menu">
+        <input type="checkbox" id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <div class="menu-content">
+          <ul>
+            <li>
+              <a href="../index.html" class="top-menu-about">Home</a>
+            </li>
+            <li>
+              <a href="../about/about.html" class="top-menu-about">About</a>
+            </li>
+            <li>
+              <a href="./works.html" class="top-menu-works">Works</a>
+            </li>
+            <li>
+              <a href="../contact/contact.html" class="top-menu-works">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>    
+    </header>
+    <!-------------------- 
+      main
+    -------------------->
+    <!-- mainvisual -->
+    <main>   
+      <div id="mainvisual" class="main-img">
+        <img src="img/main-visual.jpg" alt="メイン画像">
+        <p>
+          村木歩のポートフォリオサイト<br>
+          <br>
+          20代、フリーランス<br>
+          <br>
+          webサイト(デザイン、コーディング)<br>
+        </p>
+      </div>
+      <!-- works -->
+      <section id="works" class="wrapper">
+        <div>
+          <h2 class="section-title">Works</h2>
+          <p class="section-title-p">
+            HTML,CSS,JavaScript,Photoshopを使用して様々なサイトを作成しました。
+          </p>
+        </div>
+        <div class="content">
+          <div class="text">
+            <div class="box2">
+              <div class="works-box">              
+                <img src="img/works1.jpg" alt="cafeサイトの画像です。"> 
+                <p>
+                  架空のcafeサイトをデザインからコーディングまで行いました。<br>
+                  落ち着いた印象をイメージして白と茶色を基調としたデザインに仕上げました。<br>
+              </div>
+              <div class="works-box">
+                <img src="img/works2.jpg" alt="眼科サイトの画像です。">
+                <p>
+                  架空の眼科HPを作成しました。<br>
+                  眼科ということで、安心感をイメージしつつお客様が眼科と分かりやすいように工夫しました。<br>
+                </p>
+              </div>
+              <div class="works-box">
+                <img src="img/works3.jpg" alt="アクセサリーショップサイトの画像です。">
+                <p>
+                  アクセサリーショップ
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main> 
+    <!-------------------- 
+      footer
+    -------------------->
+    <footer id="footer" class="wrapper">  
+      <p>&copy; 2021 MURAKIAYUMI All Rights Resarved.</p>
+    </footer> 
+
+  </body>
 </html>

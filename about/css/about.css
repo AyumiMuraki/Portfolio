@@ -3,14 +3,13 @@
 /* --------------------
 common
 -------------------- */
-html {
-  font-size: 12px;
-}
+
 body {
   color:#383e45;
   font-size: 0.9rem;
 }
 a {
+  color: #383e45;
   text-decoration: none;
 }
 img {
@@ -19,21 +18,16 @@ img {
 main {
   margin-bottom: 20px;
 }
-.site-title {
-  width: 120px;
-  line-height: 1px;
-  padding: 10px 0;
-}
 .section-title {
   display: inline-block;
   font-size: 1.5rem;
-  text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;  
   border-bottom: solid 1px #383e45;
 }
+
 .wrapper {
-  max-width: 960px;
+  max-width: 1500px;
   margin: 0 auto 100 auto;
   padding: 0 4%;
   text-align: center;
@@ -41,10 +35,14 @@ main {
 #footer p {
   font-size: 10px;
 }
+h2 {
+  font-family: 'Lobster', sans-serif;
+  
+}
 /* --------------------
 Phone 
 -------------------- */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
   
 
   /* --------------------
@@ -172,11 +170,15 @@ Phone
   #mainvisual img {
     width: 100%;
   }
+  .main-img p {
+    display: none;
+  }
+
 
   /* --------------------
   about
   -------------------- */
-  #about {
+  #about-1 {
     flex-direction: column;
   }
   #about-1 {
@@ -186,9 +188,11 @@ Phone
     border-radius: 50%;
   }
   #about-1 .text1 {
-    display: flex;
-    justify-content: center;
+    width: 340px;
     text-align: left;
+    margin: 0 auto;
+    padding: 0;
+
   }
 
   #about-2 {
@@ -198,7 +202,6 @@ Phone
     margin: auto;
   }
   #about-2 .text2 {
-    display: flex;
     text-align: left;
   }
 
@@ -217,14 +220,121 @@ Phone
     color: #383e45;
   }
 
+}
+
+/* --------------------
+PC 
+-------------------- */
+@media screen and (min-width: 600px) and (max-width: 1980px) {
+  body {
+    background: linear-gradient(-150deg, #6551ff5b, #7ef6f865) fixed;
+  }
+  section {
+    margin: 0 auto;
+  }
+  /* --------------------
+  header
+  -------------------- */
+  #header {
+    margin: 0 auto;
+    padding: 0;
+  }
+  #menu-btn-check {
+    display: none;
+  }
+  #header ul {
+    padding: 0;
+  }
+  #header ul li {
+    display: inline;
+    list-style: none;
+    margin: 72px;
+  }
+  #header a {
+    font-family: 'Lobster', sans-serif;
+    font-size: 1.5rem;
+  }
+
+  /* --------------------
+  main
+  -------------------- */
+  /*-- mainvisual --*/
+  .main-img {
+    position: relative;
+  }
+  .main-img img {
+    width: 100%;
+    height: 300px;
+  }
+  .main-img p {
+    background: rgba(137, 149, 219, 0.178);
+    color: #dadada;
+    position: absolute;
+    text-align: center;
+    bottom: 10%;
+    right: 6%;
+    width: 450px;
+    padding: 10px 10px;
+  }
+
+  /*-- about-1 --*/
+  #about-1 {
+    margin-bottom: 30px;
+  }
+  #about-1 .title {
+    text-align: left;
+    margin-left: 5%;
+  }
+  #about-1 .content {
+    display: flex;
+  }
+  #about-1 img {
+    border-radius: 50%;
+  }
+  #about-1 .text1 {
+    margin-left: 24px;
+  }
+  #about-1 p {
+    text-align: left;
+  }
+  #about-1 .p-top {
+    margin-top: 30px;
+  }
+  .twitter-box {
+    color: #383e45f3;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    transition:  .5s;
+  }
+  .twitter-box:hover {
+    color: rgb(0, 140, 255);
+    transition: .5s;
+  }
+
+  /*-- about-2 --*/
+  #about-2 {
+    padding: 8px;
+  }
+  #about-2 .text2 {
+    display: flex;
+    margin-left: auto;
+    background: rgba(114, 134, 250, 0.24);
+    width: 700px;    
+    padding: 36px;
+    text-align: left;
+    justify-content: center;
+  }
+
+
   /* --------------------
   footer
-  -------------------- */ 
+  -------------------- */
   #footer {
-    flex-direction: column;
+    margin: 0 auto;
   }
-  #footer a {
-    margin: 10%;
-    color: #383e45;
+  #footer p {
+    text-align: center;
   }
+
 }

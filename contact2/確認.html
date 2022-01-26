@@ -1,0 +1,56 @@
+<?php
+// 変数初期化
+$page_flag = 0;
+if ( !empty($_POST['btn_confirm']) ){
+    // btn_confirmが押された時に確認画面へ
+    $page_flag = 1;
+} elseif ( !empty($_POST['btn_submit']) ){
+    // btn_submitが押された時に完了画面へ
+    $page_flag = 2;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>お問い合わせフォーム 入力画面</title>
+    <link rel="stylesheet" href="sample.css">
+</head>
+<body>
+<div>
+<h1>お問い合わせフォーム</h1>
+<?php if( $page_flag === 1 ): ?>
+// ここに確認画面
+<?php elseif( $page_flag === 2 ): ?>
+// ここに完了画面
+<?php else: ?>
+<form method="post" action="">
+    <div class="element_wrap">
+        <label for="name">氏名</label>
+        <input type="text" name="name" value="">
+    </div>
+    <div>
+        <label for="mail">メールアドレス</label>
+        <input type="text" name="mail" value="">
+    </div>
+    <div>
+        <label for="contents">お問い合わせ内容</label>
+        <select name="contents">
+            <option value="contents1">内容①</option>
+            <option value="contents2">内容②</option>
+            <option value="contents3">内容③</option>
+            <option value="contents4">内容④</option>
+            <option value="contents5">内容⑤</option>
+        </select>
+    </div>
+    <div>
+        <label for="remarks">備考</label><br>
+        <textarea rows="6" cols="100" name="remarks"></textarea>
+    </div>
+    <button type="submit" name="btn_confirm">入力内容を確認する</button>
+</form>
+<?php endif; ?>
+</div>
+</body>
+</html>

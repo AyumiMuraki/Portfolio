@@ -166,63 +166,27 @@ Phone
   }
 
   /* --------------------
-  main 
+  main
   -------------------- */
-
-  #mainvisual img {
-    width: 100%;
-  }
-  .main-img p {
-    display: none;
-  }
-
-
-  /* --------------------
-  about
-  -------------------- */
-  #about {
-    flex-direction: column;
-  }
-
-  /* --------------------
-  works
-  -------------------- */
-  
-  #works {
-    flex-direction: column;
-  }
-  #works .works-box2 {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  #works .btn {
-    margin-left: auto;
-    text-align: center;
-    width: 150px;
-    padding: 4px;
-    border: 1px solid #383e45;
-    border-radius: 30px;
-    right: 0;
-  }  
-  #works .btn-menu {
-    color: #383e45;
-  }
-  #works .btn:hover {
-    cursor: pointer;
-  }
-
-  /* --------------------
-  content
-  -------------------- */ 
+    /*-- contact --*/
   #contact {
     flex-direction: column;
   }
-  #contact svg {
-    color: rgb(97, 205, 219);
+  #contact-form {
+    background: cornsilk;
+    flex-direction: column;
+    display: flex;
   }
-  #contact .twitter {
-    color: #383e45;
+  #contact .text {
+    margin-bottom: 24px;
   }
+  /*-- contact-form --*/
+  #contact-fotm .input {
+    width: 100%;
+  }
+
+  /*-- 送信ボタン --*/
+
 
 }
 
@@ -231,10 +195,12 @@ Phone
 PC 
 -------------------- */
 @media screen and (min-width: 600px) and (max-width: 1980px) {
-  
-  body {
-    background: linear-gradient(-1350deg, #7ef6f865, #6551ff5b);
+  html {
+    background: linear-gradient(#7ef6f865, #6551ff5b) fixed;
   }
+
+  
+
   section {
     margin: 0 auto;
   }
@@ -264,41 +230,88 @@ PC
   /* --------------------
   main
   -------------------- */
-  /*-- mainvisual --*/
-  .main-img {
+  /*-- contact --*/
+  #contact .text {
+    padding: 16px;
+  }
+  /*-- contact-form --*/
+  #contact-form {
     position: relative;
+    width: 80%;
+    height: 250px;
   }
-  .main-img img {
-    width: 100%;
-    height: 300px;
+  #contact-form .name {
+    width: 50%;
+    height: 250px;
   }
-  .main-img p {
-    background: rgba(137, 149, 219, 0.178);
-    color: #dadada;
-    position: absolute;
-    text-align: center;
-    bottom: 10%;
-    right: 6%;
-    width: 450px;
-    padding: 10px 10px;
-  }
-  /* --------------------
-  works
-  -------------------- */
-  
-  #works .box2 {
-    display: flex;
-  }
-  #works img {
-    justify-content: space-between;
-  }
-  #works .works-box {
+  #contact-form .name p {
+    margin-top: 0;
     text-align: left;
-    margin-left: 8px;
-    border-radius: 10%;
   }
-  #works .section-title-p {
-    margin-bottom: 16px;
+  #contact-form .name input {
+    width: 95%;
+    height: 50px;
+    border-radius: 5px;
+    border: solid 0px;
+    margin-bottom: 10px;
+  }
+  #contact-form .name .form-inline {
+    margin-left: 8px;
+  }
+
+  #contact-form .message {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+  #contact-form .message .form-inline {
+    margin-left: 8px;
+  }
+  #contact-form .message p {
+    margin-top: 0;
+  }
+  #contact-form .message textarea {
+    width: 100%;
+    height: 146px;
+    border-radius: 5px;
+    border: solid 0px;
+  }
+
+  /*-- 送信ボタン --*/
+  .btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .btn input {
+    width: 100px;
+    padding: 8px;
+    border-radius: 5px;
+    border: solid 0px;
+    background: #ffffff;
+    font-size: 1.0rem;
+    
+    transition: .5s;
+  }
+
+  .btn input:hover {
+    cursor: pointer;
+    background: #e4e4e4;
+    transition: .5s;
+  }
+
+  /* --------------------
+  footer
+  -------------------- */
+  #footer {
+    margin-top: 100px;
+  }
+  #footer p {
+    text-align: center;
+    padding: 16px;
   }
 
 
